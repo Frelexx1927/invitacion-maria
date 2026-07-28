@@ -1,0 +1,26 @@
+/* Entrada suave de la tarjeta */
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tarjeta {
+    animation: entradaSuave 1.2s ease-out;
+}
+
+/* Efecto de latido en el botón de confirmar */
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+.seccion-confirmar button {
+    animation: latido 2.5s infinite ease-in-out;
+}

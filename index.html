@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación - Maria Pizango Sajami</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Great+Vibes&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+<body>
+
+    <!-- ESCENA 1: INVITACIÓN PRINCIPAL -->
+    <div id="escenaInvitacion" class="tarjeta">
+        <p class="subtitulo">¡ESTÁS CORDIALMENTE INVITADO!</p>
+        <p class="frase">Celebremos juntos los</p>
+        
+        <!-- Bloque del 60 años al lado -->
+        <div class="contenedor-edad">
+            <h1 class="edad">60</h1>
+            <span class="anios">años ♡</span>
+        </div>
+        <p class="conector">de</p>
+        <h2 class="nombre">Maria Pizango Sajami</h2>    
+
+        <p class="mensaje">
+            Será un honor compartir este momento tan especial contigo.<br>
+            <em>Tu presencia será el mejor regalo.</em>
+        </p>
+
+        <!-- Datos del Evento -->
+        <div class="info-evento">
+            <!-- Tarjeta interactiva de la fecha para agregar al calendario -->
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=60+Años+-+Maria+Pizango+Sajami&dates=20260829T210000/20260830T030000&details=Celebremos+juntos+los+60+años+de+Maria+Pizango+Sajami.+¡Te+esperamos!&location=Buenos+Aires+de+Villa+Mz.+5+Lote+11,+Chorrillos" target="_blank" rel="noopener noreferrer" class="item-evento link-calendario">
+            <span class="icono">📅</span>
+            <strong>FECHA</strong>
+            <p>Sábado<br>29/08/2026</p>
+            <span class="indicador-calendario">Agregar al calendario</span>
+        </a>
+            <div class="item-evento separado">
+                <span class="icono">⏰</span>
+                <strong>HORA</strong>
+                <p>9:00 p.m.</p>
+            </div>
+            
+        <!-- Tarjeta interactiva del lugar con Coordenadas GPS Exactas -->
+        <a href="https://maps.app.goo.gl/G4nEGV9QZosgSmus7" target="_blank" rel="noopener noreferrer" class="item-evento link-lugar">
+            <span class="icono">📍</span>
+            <strong>LUGAR</strong>
+            <p>Buenos Aires de Villa<br>Mz. 5, Lote 11<br>Chorrillos</p>
+            
+        </a>
+        
+        </div>
+
+        <div class="seccion-confirmar">
+            <button id="btnIrAConfirmar">CONFIRMAR ASISTENCIA</button>
+            <p class="fecha-limite">Fecha límite para confirmación: 15/08/2026</p>
+        </div>
+    </div>
+
+    <!-- ESCENA 2: FORMULARIO DE ASISTENCIA -->
+    <div id="escenaFormulario" class="tarjeta oculta">
+        <p class="subtitulo">CONFIRMACIÓN DE ASISTENCIA</p>
+        
+        <h2 class="titulo-escena2">¿Cuántas personas asistirán? ❤️</h2>
+
+        <form id="formConfirmacion">
+            <div class="campo">
+                <label for="nombre">Apellido de la Familia:</label>
+                <input type="text" id="nombre" placeholder="Ejemplo : Aquije Pizango" required>
+            </div>
+
+            <div class="campo">
+                <label for="cantPersonas">Número de personas (incluyéndote):</label>
+                <input type="number" id="cantPersonas" min="1" max="10" placeholder="Ej: 2" required>
+            </div>
+
+            <button type="submit" id="btnEnviar">ENVIAR CONFIRMACIÓN</button>
+        </form>
+
+        <button id="btnVolver" class="btn-secundario">← Volver a la tarjeta</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
